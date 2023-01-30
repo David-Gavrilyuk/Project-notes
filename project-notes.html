@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS - JS - Jquery-->
+    <link rel="stylesheet" href="css/project-notes.css" />
+    <script defer src="js/project-notes.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!--Header font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Marker+Hatch&display=swap" rel="stylesheet" />
+    <!-- Close note icon link-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Project 1</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <h1>My Task Board</h1>
+
+    <!-- Form for note submission -->
+    <div class="formBox">
+      <form id="noteForm" action="javascript:submitNote()">
+        <textarea id="taskDesc" rows="4" placeholder="Write down your task:" required></textarea>
+        <br />
+        Task Date:<input class="timeInput" id="taskDate" type="date" required />
+        <br />
+        Task Time:<input class="timeInput" id="taskTime" type="time" required />
+        <br />
+        <input class="buttons" id="submitBtn" type="submit" value="Submit" />
+        <input class="buttons" id="resetBtn" type="reset" value="Reset" />
+      </form>
+    </div>
+
+    <!-- Div for Submitted notes + LocalStorage notes -->
+    <div id="savedNotes"></div>
+
+    <!-- Links for header font & close icon -->
+    <footer class="links">
+      <a href="https://fonts.google.com/specimen/Permanent+Marker?query=marker">Header link</a>
+      ~
+      <a href="https://fonts.google.com/icons">Close icon link</a>
+    </footer>
+  </body>
+</html>
