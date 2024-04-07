@@ -6,15 +6,15 @@ Hello There! Welcome to Task Board, a whimsically simple to-do list.
 
 - Add Tasks: Users can add new tasks to the task board.
 
-  ![Add](img\add_task.png)
+  ![Add](img/add_task.png)
 
 - Set Finish Date and Time: Users can set a specific finish date and time for each task.
 
-  ![Set date and time](img\set_date_and_time.png)
+  ![Set date and time](img/set_date_and_time.png)
 
 - Remove Tasks: Users can remove tasks once they are completed by clicking the remove button on the task note.
 
-  ![Remove](img\remove_task.png)
+  ![Remove](img/remove_task.png)
 
 ## Technologies
 
