@@ -1,0 +1,137 @@
+body {
+  background-image: url("../img/tile.jpg");
+  font-family: cursive;
+  font-size: small;
+}
+
+h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-family: "Permanent Marker", cursive;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: gray;
+  border: 2px solid black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+@supports (scrollbar-color: black gray) {
+  * {
+    scrollbar-color: black gray;
+  }
+}
+
+/* Form, input, buttons, appearance & position */
+
+.formBox {
+  background-image: url("../img/formbg.jpg");
+  width: 650px;
+  height: 215px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding-left: 100px;
+  padding-top: 12px;
+}
+
+textarea {
+  font-family: cursive;
+  font-size: small;
+  resize: none;
+  height: 80px;
+  width: 540px;
+}
+
+textarea,
+#taskDate,
+#taskTime {
+  background: transparent;
+  border: 0 none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 14.5px;
+}
+
+.timeInput {
+  height: 18.5px;
+}
+
+.buttons {
+  border: 2px solid black;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 3px 12px;
+  margin-top: 3.5px;
+}
+
+#resetBtn {
+  background: linear-gradient(#fe1a00 5%, #ce0100 100%);
+}
+
+#submitBtn {
+  background: linear-gradient(#77d42a 5%, #5cb811 100%);
+}
+
+/* Form input values appearance & position for notes */
+
+#noteInfo {
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  padding-left: 50px;
+}
+
+.noteText {
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+  word-wrap: break-word;
+  height: 140px;
+  width: 160px;
+  top: 50px;
+  left: 60px;
+}
+
+.noteTime {
+  position: absolute;
+  top: 205px;
+  left: 60px;
+}
+
+/* Delete icon */
+
+.removeNote {
+  position: absolute;
+  opacity: 0;
+  border: 0 none;
+  cursor: pointer;
+  height: 25px;
+  width: 30px;
+  top: 20px;
+  left: 195.5px;
+}
+
+.noteInfo:hover .removeNote {
+  background: transparent;
+  outline: none;
+  opacity: 1;
+}
+
+/* Font & Icon links */
+
+footer {
+  position: relative;
+  top: 350px;
+}
